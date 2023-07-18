@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="LMS.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        img {
+            max-width: 150px;
+            max-height: 130px;
+            object-fit: contain;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"> <i class='fas fa-book-open' style='font-size:25px;color:white'></i> Avlani Library</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="admindashboard.html" class="active">Admin Dashboard</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li style="float:right"><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="lib_dash">
+        <div class="lib_dash_left">
+            <nav>
+                <a class="nav-link" href="admindashboard.html">Admin Welcome</a>
+                <a class="nav-link" href="adminBooks.html">View Books and Edit Details</a>
+                <a class="nav-link" href="adminAddBooks.html">Add Books</a>
+                <a class="nav-link" href="logout.html">Logout</a>
+            </nav>
+        </div>
+
+        <div class="lib_dash_right">
+            <div class="adminTable">
+                <div class="table-title">
+                    <h3>All Books</h3>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Image</th>
+                            <th>Edit Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Python</td>
+                            <td>Best book for beginners</td>
+                            <td><img src="python.jpg" /></td>
+                            <td class="table_buttons">
+                                <a class="edit" href="admineditbook.html" title="Edit Borrower" data-toggle="tooltip">
+                                    <i class="material-icons">edit</i>
+                                </a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>HTML, CSS, Javascript</td>
+                            <td>Best book for all.</td>
+                            <td><img src="html.jpg" /></td>
+                            <td class="table_buttons">
+                                <a class="edit" href="admineditbook.html" title="Edit Borrower" data-toggle="tooltip">
+                                    <i class="material-icons">edit</i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>Data Structures</td>
+                            <td>Best book for ds subject.</td>
+                            <td><img src="ds.jpg" /></td>
+                            <td class="table_buttons">
+                                <a class="edit" href="admineditbook.html" title="Edit Borrower" data-toggle="tooltip">
+                                    <i class="material-icons">edit</i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" href="LMS.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a style="color: white;font-family: Georgia;" href="#"> <i class='fas fa-book-open'
+            style='font-size:25px;color:white'></i> Avlani Library</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="adminlogin.html">Admin Login</a></li>
+      <li><a href="userlogin.html">User Login</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <marquee>
+    <h1>Welcome to Avlani's Library</h1>
+  </marquee>
+
+  <img class="mySlides" src="img3.jpg">
+  <img class="mySlides" src="lib2.jpg">
+  <img class="mySlides" src="lib.jpg">
+  <img class="mySlides" src="lib4.jpg">
+  <img class="mySlides" src="img5.jpg">
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+  </script>
+
+  <footer class="footer1">
+    <p> <strong>&copy Avlani Library</strong></p>
+  </footer>
+
+</body>
+
+</html>

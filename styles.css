@@ -1,0 +1,51 @@
+  .lib_dash_left {
+    background: #282828;
+    width: 155px;
+    position: fixed;
+    top: 75px;
+    height: 100%;
+  }
+
+  .nav-link {
+    border-bottom: 1px solid #4b4b4b;
+    color: white;
+  }
+
+  .lib_dashGreeting_right {
+    flex-grow: 1;
+    margin: 50px 0px 0px 155px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .lib_dash_right {
+    flex-grow: 1;
+    margin: 50px 0px 0px 155px;
+  }
+
+  .libTable {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .libTable td a.edit {
+    cursor: pointer;
+    color: red;
+  }
+
+  .table-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+  }
+
+  .libTable form {
+    border: 1px solid #c2b4b4;
+    padding: 20px 20px;
+  }
+
+  table {
+    text-align: center;
+  }

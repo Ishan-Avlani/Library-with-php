@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="LMS.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+        .frm {
+            background-color: #eee;
+            padding: 20px;
+            width: 25%;
+            margin-left: 38%;
+            margin-top: 15%;
+            border: 2px solid #007b5e;
+            border-radius: 20px;
+            height: 270px;
+            text-align: center;
+            font-size: x-large;
+        }
+
+        table {
+            font-size: x-large;
+        }
+
+        .backgroundImg {
+            position: absolute;
+            z-index: -10;
+            height: 90%;
+            width: 99%;
+        }
+    </style>
+    <script type="text/javascript">
+        function submitForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "admin") {
+                alert("Login Successful. Welcome Dear Admin");
+                window.location.href = "admindashboard.html";
+            } else {
+                alert("Invalid username or password!");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a style="color: white;font-family: Georgia;" href="#"> <i class='fas fa-book-open'
+                        style='font-size:25px;color:white'></i> Avlani Library</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adminlogin.html" class="active">Admin Login</a></li>
+        </ul>
+    </nav>
+
+    <img class="backgroundImg" src="lib1.jpg" alt="img">
+
+    <div class="frm">
+        <center>
+            <h2 style="color:darkorange;">Admin Login Form</h2>
+        </center>
+        <hr>
+        <br>
+        <form method="get" action="admindashboard.html">
+            <center>
+                <table>
+                    <tr>
+                        <td>Username </td>
+                        <td><input type="text" id="username" style="border-radius:5px;width: 90%;" required /></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <td>Password </td>
+                        <td><input type="password" id="password" style="border-radius:5px;width: 90%;" required /></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                </table>
+            </center>
+            <input type="submit" name=" submit" value="Submit" onclick="submitForm()">
+            <span><a href="register.html"> New user ? </a> </span>
+        </form>
+    </div>
+
+    <footer class="footer1">
+        <h5> &copy Avlani Library</h5>
+    </footer>
+</body>
+
+</html>

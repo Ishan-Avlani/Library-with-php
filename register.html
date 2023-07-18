@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="LMS.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+        form {
+            text-align: center;
+            margin-left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a style="color: white;font-family: Georgia;" href="#"> <i class='fas fa-book-open'
+                        style='font-size:25px;color:white'></i> Avlani Library</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html" class="active">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <form method="POST" action="register.php">
+        <table style="background-color: #ffffcc;margin-top: 10%; width: 500px; border :0 ; text-align:center;">
+
+            <tr>
+                <td colspan="2" style="font-weight:bold;font-size:20pt; text-align: center;">Create Account
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="font-weight:bold;font-size:15pt;">First Name</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+
+            <tr>
+                <td style="font-weight:bold;font-size:15pt;">Last Name</td>
+                <td><input type="text" name="sirname" id="sirname"></td>
+            </tr>
+
+            <tr>
+                <td style="font-weight:bold;font-size:15pt;">Gender</td>
+                <td><select name="gender" id="gender">
+                        <option value="Gujarat">Male</option>
+                        <option value="Maharashtra">Female</option>
+                        <option value="Karanataka">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="font-weight:bold;font-size:15pt;">Address</td>
+                <td><textarea name="address" rows=3 cols=20 id="address"></textarea></td>
+            </tr>
+
+            <tr>
+                <td style="font-weight:bold;font-size:15pt;">State</td>
+                <td><select name="state" id="state">
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Karanataka">Karanataka</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="font-weight:bold;font-size:15pt;">City</td>
+                <td><select name="city" id="city">
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Karanataka">Bengalore</option>
+                        <option value="Chennai">Chennai</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="font-weight:bold;font-size:15pt;">Username</td>
+                <td><input type="text" name="username" id="username"></td>
+            </tr>
+
+            <tr>
+                <td style="font-weight:bold;font-size:15pt;">Password</td>
+                <td><input type="text" name="pwd" id="pwd"></td>
+            </tr>
+
+            <tr>
+                <td style="font-weight:bold;font-size:15pt;">Email</td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+
+            <tr>
+                <td style="font-weight:bold;font-size:15pt;">Mobile Number</td>
+                <td><input type="text" name="number" id="number"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" name=" submit" class="btn btn-info" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+
+    <footer class="footer1">
+        <p> <strong>&copy Avlani Library</strong></p>
+    </footer>
+
+</body>
+
+</html>

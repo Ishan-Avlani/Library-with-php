@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="LMS.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"> <i class='fas fa-book-open' style='font-size:25px;color:white'></i> Avlani Library</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="admindashboard.html" class="active">Admin Dashboard</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li style="float:right"><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="lib_dash">
+        <div class="lib_dash_left">
+            <nav>
+                <a class="nav-link" href="admindashboard.html">Admin Welcome</a>
+                <a class="nav-link" href="adminBooks.html">View Books and Edit Details</a>
+                <a class="nav-link" href="adminAddBooks.html">Add Books</a>
+                <a class="nav-link" href="index.html">Logout</a>
+            </nav>
+        </div>
+
+        <div class="lib_dash_right">
+            <div class="libTable">
+                <h3>Edit Book Details</h3>
+                <form>
+                    <div>
+                        <label><b>Title</b></label>
+                        <div>
+                            <input type="text" style="columns: 10;" placeholder="Title...">
+                        </div>
+                    </div>
+                    <div>
+                        <label><b>Description</b></label>
+                        <div>
+                            <textarea placeholder="Description..." cols="10" rows="3"> </textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <label><b>Image</b></label>
+                        <div>
+                            <input type="file" style="columns: 10;" placeholder="Image of book...">
+                        </div>
+                    </div>
+                </form>
+
+                <div>
+                    <a href="adminBooks.html">
+                        <button>Cancel</button>
+                    </a>
+                    <a href="done.html">
+                        <button type="submit">Done Edit Book</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
